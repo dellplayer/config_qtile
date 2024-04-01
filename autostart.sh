@@ -1,0 +1,19 @@
+#!/bin/bash
+picom -f &
+nm-applet &
+blueman-applet &
+dunst &
+#feh --randomize --bg-fill /home/julien/wallpapers/*jpg
+feh --randomize --bg-fill /home/julien/wallpapers/*
+#feh --bg-fill /usr/share/wallpapers/garuda-wallpapers/qtile.jpg
+#feh --bg-fill /home/julien/wallpapers/arcbg-majup2.png
+#volumeicon &
+copyq --start-server &
+#kwalletmanager5 &
+kwallet-query -l kdewallet &
+emacs --daemon --init-directory /home/julien &
+nextcloud &
+flameshot &
+keepassxc &
+teams &
+exit 0
