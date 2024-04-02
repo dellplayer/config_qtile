@@ -156,7 +156,16 @@ for vt in range(1, 8):
 groups = [
 #        Group(name="1", screen_affinity=1, matches=[Match(wm_class='VirtualBox Machine'), Match(wm_class='VirtualBox Manager'), Match=(wm_class=re.compile('.*remmina|Remmina.*'))]),
         Group(name="1", screen_affinity=1, matches=[Match(wm_class=re.compile('.*remmina|Remmina.*')),Match(wm_class=re.compile('.*VirtualBox.*'))],
-#              layout="monadtall"
+              layouts = [layout.MonadTall(
+        ratio=0.62,
+        margin=6,
+        border_width=4,
+        border_focus=colors[2],
+        new_client_position='after_current',
+    ),
+    layout.Max(),
+    layout.Columns(border_focus=colors[2], border_width=5, margin=5),
+]
               ),    
 #    Group(name="1", screen_affinity=1, matches=Match(wm_class=[re.compile('.*remmina|Remmina.*'), 'firefox'])),
     Group(name="2", screen_affinity=0),
