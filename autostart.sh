@@ -16,4 +16,6 @@ nextcloud &
 flameshot &
 keepassxc &
 teams &
+virt-manager &
+remmina &
 exit 0
