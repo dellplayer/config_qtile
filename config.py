@@ -155,7 +155,7 @@ for vt in range(1, 8):
 #groups = [Group(i) for i in "123456789"]
 groups = [
 #        Group(name="1", screen_affinity=1, matches=[Match(wm_class='VirtualBox Machine'), Match(wm_class='VirtualBox Manager'), Match=(wm_class=re.compile('.*remmina|Remmina.*'))]),
-        Group(name="1", screen_affinity=1, matches=[Match(wm_class=re.compile('.*remmina|Remmina.*')),Match(wm_class=re.compile('.*VirtualBox.*'))],
+        Group(name="1", screen_affinity=1, matches=[Match(wm_class=re.compile('.*remmina|Remmina.*')),Match(wm_class=re.compile('.*VirtualBox.*')),Match(wm_class=re.compile('.*irt-manager,*'))],
               layouts = [layout.MonadTall(
         ratio=0.62,
         margin=6,
