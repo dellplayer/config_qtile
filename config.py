@@ -446,6 +446,10 @@ screens = [
                 widget.Spacer(length=40),
                 widget.CurrentLayoutIcon(),
                 widget.CurrentLayout(),
+                widget.Clock(
+                    format="%Y-%m-%d %a %H:%M",
+                    background=colors[17],
+                ),                
                 ],24)),
 #third screen
     Screen(
@@ -492,6 +496,10 @@ screens = [
                 widget.Spacer(length=40),
                 widget.CurrentLayoutIcon(),
                 widget.CurrentLayout(),
+                widget.Clock(
+                    format="%Y-%m-%d %a %H:%M",
+                    background=colors[17],
+                ),                
                 ],24)),
 ]
 
